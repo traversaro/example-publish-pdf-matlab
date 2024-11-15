@@ -13,7 +13,7 @@ jobs:
         uses: matlab-actions/setup-matlab@v2
       - name: Download dependencies
         run: |
-          wget https://github.com/chebfun/chebfun/archive/f44234100d8af189d60e4bc533f5e98a0442a4c1.zip -o chebfun.zip
+          wget https://github.com/chebfun/chebfun/archive/f44234100d8af189d60e4bc533f5e98a0442a4c1.zip -O chebfun.zip
           unzip chebfun.zip
           wget https://www.chebfun.org/ATAP/atap-mfiles.zip
           unzip atap-mfiles.zip
