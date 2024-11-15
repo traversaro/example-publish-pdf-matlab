@@ -21,4 +21,8 @@ jobs:
       - name: Run statements
         uses: matlab-actions/run-command@v2
         with:
-          command: publish('chap16.m','pdf')
+          command: addpath('./chebfun-f44234100d8af189d60e4bc533f5e98a0442a4c1'), publish('chap16.m','pdf')
+      - uses: actions/upload-artifact@v4
+        with:
+          name: generated-pdfs
+          path: html
